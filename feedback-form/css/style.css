@@ -1,0 +1,50 @@
+#was_this_helpful {
+	padding: 20px;
+	background: #fff;
+	border: solid 1px #ccc;
+	text-align: center;
+	width: 260px;
+	display: block;
+	margin: 50px auto;
+	background: #fafafa;
+  }
+  #wp_feedback_title {
+    font-size: 18px;
+	padding-bottom: 7px;
+	font-weight: 400;
+    color: #555;
+}
+#wp_feedback_yes_no span {
+	cursor: pointer;
+	padding: 6px;
+	border: solid 1px #eee;
+	margin: 0 6px;
+	color: #fff;
+	width: 50px;
+display: inline-block;
+  }
+  #wp_feedback_yes_no {
+	margin: 10px;
+  }
+  .feedback_yes {
+	background-color: #00E483;
+	  }
+  .feedback_no {
+	background-color: #F85E70;
+  }
+  #was_this_helpful.wp_feedback_disabled{
+	pointer-events:none;
+	position:relative;
+	border: 0px;
+}
+
+#was_this_helpful.wp_feedback_disabled *{
+	opacity:0;
+}
+
+#was_this_helpful.wp_feedback_disabled:after{
+	content:attr(data-thank-text);
+	display:block;
+	position:absolute;
+	top:50%;
+}
